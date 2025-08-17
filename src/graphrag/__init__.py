@@ -1,0 +1,1 @@
+# GraphRAG Module for Thai Legal Cases
