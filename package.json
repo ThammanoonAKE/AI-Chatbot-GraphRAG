@@ -11,7 +11,8 @@
     "fullstack": "python run_dev.py",
     "install-deps": "pip install -r requirements.txt",
     "setup": "npm install && pip install -r requirements.txt",
-    "start": "npm run backend"
+    "start": "npm run backend",
+    "vercel-build": "vite build"
   },
   "dependencies": {
     "react": "^18.2.0",

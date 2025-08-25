@@ -45,6 +45,18 @@ app.include_router(router)
 async def startup_event():
     """Application startup event"""
     logger.info("🚀 Thai Legal GraphRAG API starting...")
+    
+    # Initialize embeddings and knowledge graph on startup
+    logger.info("📊 Initializing embeddings and knowledge graph...")
+    try:
+        from src.search import SearchManager
+        # Initialize SearchManager to build embeddings and graph
+        search_manager = SearchManager()
+        logger.info("✅ Embeddings and knowledge graph initialized successfully")
+    except Exception as e:
+        logger.error(f"❌ Failed to initialize embeddings: {e}")
+        logger.warning("⚠️ Server will continue but search functionality may be limited")
+    
     logger.info("📡 Available endpoints:")
     logger.info("   - POST /chat - Chat with AI assistant (GraphRAG-enhanced)")
     logger.info("   - POST /search - Advanced search with knowledge graph")

@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(if [ -f \"embeddings.npy\" ])",
+      "Bash(then mv embeddings.npy data/embeddings/)",
+      "Bash(fi)",
+      "Bash(if [ -f \"index_ivf.faiss\" ])",
+      "Bash(then mv index_ivf.faiss data/embeddings/)",
+      "Bash(if [ -f \"metadata.json\" ])",
+      "Bash(then mv metadata.json data/embeddings/)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(venvScripts:*)",
+      "Bash(.venvScriptsactivate.bat)",
+      "Bash(venv/Scripts/python.exe -m pip install:*)",
+      "Bash(venv/Scripts/python.exe:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
