@@ -1,16 +1,23 @@
-setuptools>=65.0
-wheel>=0.38.0
+# Core web framework
 fastapi==0.104.1
-uvicorn[standard]==0.24.0
+uvicorn==0.24.0
 pydantic==2.5.0
 python-dotenv==1.0.0
-sentence-transformers==2.2.2
-google-generativeai==0.3.2
-faiss-cpu==1.7.4
-numpy==1.24.3
-tqdm==4.66.1
-networkx==3.2.1
-python-louvain==0.16
-scikit-learn==1.3.2
-pandas==2.1.4
-python-multipart==0.0.6
+
+# Essential ML libraries (compatible versions)
+numpy>=1.21.0,<1.25.0
+scikit-learn>=1.0.0,<1.4.0
+pandas>=1.3.0,<2.2.0
+
+# Text processing and AI
+sentence-transformers>=2.2.0,<2.3.0
+google-generativeai>=0.3.0,<0.4.0
+
+# Search and graph processing
+faiss-cpu>=1.7.0,<1.8.0
+networkx>=3.0.0,<3.3.0
+python-louvain>=0.16
+
+# Utilities
+tqdm>=4.60.0
+python-multipart>=0.0.6
