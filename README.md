@@ -1,40 +1,40 @@
-# ระบบค้นหาคดีกฎหมายไทย พร้อม GraphRAG
+# Thai Legal Case Search System with GraphRAG
 
-🏛️ **ระบบค้นหาคดีกฎหมายไทยขั้นสูงพร้อม GraphRAG และหน้าเว็บ React**
+🏛️ **Advanced Thai Legal Case Search System with GraphRAG and React Frontend**
 
-แชทบอท AI ที่ทันสมัยซึ่งผสมผสาน **GraphRAG (Graph Retrieval-Augmented Generation)** กับการค้นหาด้วย Vector เพื่อให้การวิเคราะห์คดีกฎหมายและคำแนะนำที่ชาญฉลาดสำหรับเอกสารกฎหมายไทย
+A sophisticated AI-powered chatbot that combines **GraphRAG (Graph Retrieval-Augmented Generation)** with traditional vector search to provide intelligent legal case analysis and recommendations for Thai legal documents.
 
-## ✨ คุณสมบัติเด่น
+## ✨ Key Features
 
-### 🧠 เทคโนโลยี GraphRAG
-- **สร้างกราฟความรู้**: สร้างความสัมพันธ์ระหว่างคดี ผู้พิพากษา แนวคิดทางกฎหมาย และประเภทคดีโดยอัตโนมัติ
-- **การค้นหากลุ่มข้อมูล**: ระบุกลุ่มคดีที่เกี่ยวข้องกันด้วย Louvain algorithm
-- **การค้นหาที่ดีขึ้น**: ผสมผสานการค้นหาด้วย Vector similarity กับ Context จากกราฟ
-- **วิเคราะห์ความสัมพันธ์**: ค้นพบความเชื่อมโยงที่ซ่อนอยู่ระหว่างหน่วยงานทางกฎหมาย
+### 🧠 GraphRAG Technology
+- **Knowledge Graph Construction**: Automatically builds relationships between cases, judges, legal concepts, and case types
+- **Community Detection**: Identifies clusters of related cases using Louvain algorithm
+- **Enhanced Search**: Combines vector similarity search with graph-based context
+- **Relationship Analysis**: Discovers hidden connections between legal entities
 
-### 🔍 ความสามารถในการค้นหาขั้นสูง
-- **การค้นหาหลายรูปแบบ**: หมายเลขคดี ชื่อผู้พิพากษา ประเภทคดี แนวคิดทางกฎหมาย
-- **การค้นหาเชิงความหมาย**: Vector embeddings ใช้ Sentence Transformers
-- **ผลลัพธ์ที่เสริมด้วยกราฟ**: คดีที่เกี่ยวข้องเพิ่มเติมจากการสำรวจกราฟความรู้
-- **การตรวจจับเจตนาอัจฉริยะ**: กำหนดกลยุทธ์การค้นหาโดยอัตโนมัติตามคำสอบถาม
+### 🔍 Advanced Search Capabilities
+- **Multi-Modal Search**: Case numbers, judge names, case types, legal concepts
+- **Semantic Search**: Vector embeddings using Sentence Transformers
+- **Graph-Enhanced Results**: Additional related cases from knowledge graph traversal
+- **Intelligent Intent Detection**: Automatically determines search strategy based on query
 
-### 🎯 การวิเคราะห์ด้วย AI
-- **การรวม Google Gemini**: การวิเคราะห์และการใช้เหตุผลข้อความทางกฎหมายขั้นสูง
-- **การตอบสนองเชิงบริบท**: ใช้ทั้ง Vector และ Graph context เพื่อคำตอบที่ครอบคลุม
-- **รองรับภาษาไทย**: การประมวลผลข้อความไทยและการทำให้เป็นมาตรฐานเฉพาะ
-- **ความเชี่ยวชาญด้านกฎหมาย**: เน้นศัพท์และแนวคิดทางกฎหมายไทย
+### 🎯 AI-Powered Analysis
+- **Google Gemini Integration**: Advanced legal text analysis and reasoning
+- **Contextual Responses**: Uses both vector and graph context for comprehensive answers
+- **Thai Language Support**: Specialized Thai text processing and normalization
+- **Legal Domain Expertise**: Focus on Thai legal terminology and concepts
 
-### 🖥️ หน้าเว็บสมัยใหม่
-- **React 18**: อินเทอร์เฟซผู้ใช้ที่ทันสมัย
-- **Material-UI**: องค์ประกอบการออกแบบแบบมืออาชีพ
-- **Framer Motion**: ภาพเคลื่อนไหวและการเปลี่ยนผ่านที่ราบรื่น
-- **Glass Morphism**: เอฟเฟกต์ภาพที่สวยงาม
-- **แชทแบบเรียลไทม์**: อินเทอร์เฟซการสนทนาแบบโต้ตอบ
+### 🖥️ Modern Web Interface
+- **React 18**: Modern, responsive user interface
+- **Material-UI**: Professional design components
+- **Framer Motion**: Smooth animations and transitions
+- **Glass Morphism**: Beautiful visual effects
+- **Real-time Chat**: Interactive conversational interface
 
-## 🏗️ สถาปัตยกรรม
+## 🏗️ Architecture
 
 ```
-ระบบกฎหมายไทย GraphRAG
+Thai Legal GraphRAG System
 ├── Frontend (React + Vite)
 │   ├── React Components
 │   ├── Material-UI Design
@@ -45,165 +45,177 @@
 │   ├── Knowledge Graph (NetworkX)
 │   └── AI Integration (Gemini)
 └── Data Processing
-    ├── คดีกฎหมายไทย (JSON)
+    ├── Thai Legal Cases (JSON)
     ├── Vector Embeddings
     └── Knowledge Graph
 ```
 
-## 📦 การติดตั้ง
+## 📦 Installation
 
-### ความต้องการเบื้องต้น
-- **Python 3.10+**
+### Prerequisites
+- **Python 3.11+**
 - **Node.js 16+**
 - **Git**
 
-### 1. ดาวน์โหลดโปรเจ็ค
+### 1. Clone Repository
 ```bash
-git clone https://github.com/ThammanoonAKE/AI-Chatbot-GraphRAG.git
+git clone https://github.com/your-username/AI-Chatbot-GraphRAG.git
 cd AI-Chatbot-GraphRAG
 ```
 
-### 2. ตั้งค่า Backend
+### 2. Backend Setup
 ```bash
-# สร้าง virtual environment
+# Create virtual environment
 python -m venv venv
 
-# เปิดใช้งาน virtual environment
+# Activate virtual environment
 # Windows:
 venv\Scripts\activate
 # Linux/Mac:
 source venv/bin/activate
 
-# ติดตั้ง Python dependencies
+# Install Python dependencies
 pip install -r requirements.txt
 ```
 
-### 3. ตั้งค่า Frontend
+### 3. Frontend Setup
 ```bash
-# ติดตั้ง Node.js dependencies
+# Install Node.js dependencies
 npm install
 ```
 
-### 4. การกำหนดค่าสภาพแวดล้อม
+### 4. Environment Configuration
 ```bash
-# คัดลอก template สภาพแวดล้อม
+# Copy environment template
 cp .env.example .env
 
-# แก้ไขไฟล์ .env ด้วย API keys ของคุณ
-# จำเป็น: GEMINI_API_KEY
+# Edit .env file with your API keys
+# Required: GEMINI_API_KEY
 ```
 
-### 5. การเตรียมข้อมูล
-- วางไฟล์ JSON คดีกฎหมายไทยในไดเรกทอรี `json_cases/`
-- แต่ละไฟล์ JSON ควรมี metadata ของคดี (decision_id, title, summary, judges, ฯลฯ)
+### 5. Data Preparation
+- Place Thai legal case JSON files in the `json_cases/` directory
+- Each JSON file should contain case metadata (decision_id, title, summary, judges, etc.)
 
-## 🚀 การรันแอปพลิเคชัน
+## 🚀 Running the Application
 
-### โหมดพัฒนา
+### Development Mode
 
-#### เริ่ม Backend (Terminal 1)
+#### Start Backend (Terminal 1)
 ```bash
-# เปิดใช้งาน virtual environment
+# Activate virtual environment
 venv\Scripts\activate  # Windows
 # source venv/bin/activate  # Linux/Mac
 
-# เริ่ม FastAPI server
+# Start FastAPI server
 python main.py
 ```
-Backend ทำงานที่: `http://localhost:8000`
+Backend runs at: `http://localhost:8000`
 
-#### เริ่ม Frontend (Terminal 2)
+#### Start Frontend (Terminal 2)
 ```bash
-# เริ่ม React development server
+# Start React development server
 npm run dev
 ```
-Frontend ทำงานที่: `http://localhost:3000`
+Frontend runs at: `http://localhost:3000`
 
-### Production
+### Production Mode
 ```bash
-# สร้าง React frontend
+# Build React frontend
 npm run build
 
-# เริ่ม production server
+# Start production server
 python main.py
 ```
 
-## 📊 องค์ประกอบ GraphRAG
+## 🚀 Deployment
 
-### โครงสร้างกราฟความรู้
-- **โหนด**: คดี, ผู้พิพากษา, แนวคิดทางกฎหมาย, ประเภทคดี, มาตราที่เกี่ยวข้อง
-- **ขอบ**: ความสัมพันธ์เช่น "ประกอบด้วย", "ดำเนินการ", "คล้ายกับ", "เกี่ยวข้องกับ"
-- **ชุมชน**: กลุ่มของเอนทิตีที่เกี่ยวข้องกันที่ตรวจพบโดยอัตโนมัติ
+### Backend on Render
+- Configured with `render.yaml` for easy deployment
+- Supports Python 3.11 with optimized dependencies
+- Auto-builds embeddings and knowledge graph on startup
 
-### การค้นหาที่เสริมด้วยกราฟ
-1. **การค้นหา Vector**: การค้นคืนเบื้องต้นตามความคล้ายคลึง
-2. **การสำรวจกราฟ**: ค้นหาเอนทิตีที่เกี่ยวข้องผ่านกราฟความรู้
-3. **บริบทชุมชน**: รวมเอนทิตีจากชุมชนเดียวกัน
-4. **การให้คะแนนความเกี่ยวข้อง**: ผสมผสานคะแนนตาม Vector และกราฟ
+### Frontend on Vercel
+- Configured with `vercel.json` for seamless deployment
+- Environment variables for backend API connection
+- Global CDN for fast worldwide access
 
-### ประเภทความสัมพันธ์
-- `contains`: คดีประกอบด้วยแนวคิดทางกฎหมาย/ผู้พิพากษา
-- `handles`: ผู้พิพากษาดำเนินการประเภทคดี
-- `similar_to`: คดีที่มีความคล้ายคลึงสูง
-- `deals_with`: ผู้พิพากษาเกี่ยวข้องกับแนวคิดทางกฎหมาย
-- `related`: ความสัมพันธ์ทั่วไป
+## 📊 GraphRAG Components
 
-## 🔧 การกำหนดค่า
+### Knowledge Graph Structure
+- **Nodes**: Cases, Judges, Legal Concepts, Case Types, Related Articles
+- **Edges**: Relationships like "contains", "handles", "similar_to", "related_to"
+- **Communities**: Automatically detected clusters of related entities
 
-### ตัวแปรสภาพแวดล้อม (.env)
+### Graph-Enhanced Search
+1. **Vector Search**: Initial retrieval based on similarity
+2. **Graph Traversal**: Find related entities through knowledge graph
+3. **Community Context**: Include entities from same community
+4. **Relevance Scoring**: Combine vector and graph-based scores
+
+### Relationship Types
+- `contains`: Case contains legal concepts/judges
+- `handles`: Judge handles case types
+- `similar_to`: High similarity between cases
+- `deals_with`: Judge deals with legal concepts
+- `related`: General relationship
+
+## 🔧 Configuration
+
+### Environment Variables (.env)
 ```env
 # API Keys
 GEMINI_API_KEY=your_gemini_api_key_here
 
-# เส้นทาง
+# Paths
 JSON_FOLDER=json_cases
 EMBEDDINGS_FOLDER=data/embeddings
 GRAPHS_FOLDER=data/graphs
 
-# การกำหนดค่า API
+# API Configuration
 API_HOST=0.0.0.0
 API_PORT=8000
 
-# พารามิเตอร์ GraphRAG
-MAX_CONTEXT=10000          # จำนวนตัวอักษรสูงสุดที่ส่งให้ AI
-CHUNK_SIZE=8000           # ขนาดของแต่ละชิ้นข้อมูล
-CHUNK_OVERLAP=800         # ส่วนที่ทับซ้อนระหว่างชิ้นข้อมูล
-MIN_CHUNK_SIZE=500        # ขนาดข้อมูลขั้นต่ำ
-COMMUNITY_RESOLUTION=1.0  # ความละเอียดในการจัดกลุ่ม
-MIN_COMMUNITY_SIZE=3      # ขนาดกลุ่มขั้นต่ำ
-MAX_GRAPH_DEPTH=3         # ความลึกสูงสุดของกราฟ
+# GraphRAG Parameters
+MAX_CONTEXT=10000          # Maximum characters sent to AI
+CHUNK_SIZE=8000           # Size of each text chunk
+CHUNK_OVERLAP=800         # Overlap between chunks
+MIN_CHUNK_SIZE=500        # Minimum chunk size
+COMMUNITY_RESOLUTION=1.0  # Community detection resolution
+MIN_COMMUNITY_SIZE=3      # Minimum community size
+MAX_GRAPH_DEPTH=3         # Maximum graph traversal depth
 ```
 
-### ประเภทการค้นหา
-- `similarity`: การค้นหาเชิงความหมายด้วย Vector
-- `case_number`: การจับคู่หมายเลขคดีที่แน่นอน
-- `judge`: การค้นหาชื่อผู้พิพากษาด้วย fuzzy matching
-- `case_type`: กรองตามหมวดหมู่คดี
-- `graphrag`: การค้นหาเสริมด้วยกราฟความรู้
-- `combined`: การค้นหาหลายกลยุทธ์อย่างชาญฉลาด (ค่าเริ่มต้น)
+### Search Types
+- `similarity`: Semantic vector search
+- `case_number`: Exact case number matching
+- `judge`: Judge name search with fuzzy matching
+- `case_type`: Case type filtering
+- `graphrag`: Graph-enhanced search
+- `combined`: Intelligent multi-strategy search (default)
 
-## 📡 จุดปลาย API
+## 📡 API Endpoints
 
-### แชทและค้นหา
-- `POST /chat` - แชท AI ด้วยการเสริม GraphRAG
-- `POST /search` - การค้นหาขั้นสูงด้วยเกณฑ์หลายอย่าง
-- `GET /search/case/{case_number}` - ค้นหาตามหมายเลขคดี
-- `GET /search/judge/{judge_name}` - ค้นหาตามชื่อผู้พิพากษา
-- `GET /search/type/{case_type}` - ค้นหาตามประเภทคดี
+### Chat and Search
+- `POST /chat` - AI chat with GraphRAG enhancement
+- `POST /search` - Advanced multi-criteria search
+- `GET /search/case/{case_number}` - Search by case number
+- `GET /search/judge/{judge_name}` - Search by judge name
+- `GET /search/type/{case_type}` - Search by case type
 
-### ข้อมูล
-- `GET /info/case-types` - ประเภทคดีที่มีอยู่
-- `GET /info/judges` - ผู้พิพากษาในระบบ
-- `GET /info/statistics` - สถิติระบบ
-- `GET /graph/stats` - สถิติกราฟความรู้
+### Information
+- `GET /info/case-types` - Available case types
+- `GET /info/judges` - System judges
+- `GET /info/statistics` - System statistics
+- `GET /graph/stats` - Knowledge graph statistics
 
-### เอกสาร
-- `GET /docs` - เอกสาร API แบบโต้ตอบ
-- `GET /` - ข้อมูล API และจุดปลาย
+### Documentation
+- `GET /docs` - Interactive API documentation
+- `GET /` - API information and endpoints
 
-## 🏛️ คุณสมบัติด้านกฎหมาย
+## 🏛️ Legal Domain Features
 
-### ประเภทคดีกฎหมายไทย
+### Thai Legal Case Types
 - **อาญา** (Criminal)
 - **แพ่ง** (Civil)
 - **แรงงาน** (Labor)
@@ -212,103 +224,101 @@ MAX_GRAPH_DEPTH=3         # ความลึกสูงสุดของก�
 - **ครอบครัว** (Family)
 - **ทรัพย์สินทางปัญญา** (Intellectual Property)
 
-### การสกัดแนวคิดทางกฎหมาย
-- การตรวจจับศัพท์และแนวคิดทางกฎหมายโดยอัตโนมัติ
-- การอ้างอิงมาตรากฎหมายไทย
-- การรู้จำรูปแบบหมายเลขคดี
-- การทำให้ชื่อผู้พิพากษาเป็นมาตรฐาน
-- การระบุความสัมพันธ์ทางกฎหมาย
+### Legal Concept Extraction
+- Automatic detection of legal terms and concepts
+- Thai legal article references
+- Case number pattern recognition
+- Judge name normalization
+- Legal relationship identification
 
-### การประมวลผลข้อความ
-- การทำให้ Unicode ไทยเป็นมาตรฐาน
-- การสกัดคำสำคัญทางกฎหมาย
-- การแบ่งเอกสารด้วยการทับซ้อน
-- การให้คะแนนความคล้ายคลึงสำหรับข้อความไทย
+### Text Processing
+- Thai Unicode normalization
+- Legal keyword extraction
+- Document chunking with overlap
+- Similarity scoring for Thai text
 
-## 🛠️ การพัฒนา
+## 🛠️ Development
 
-### โครงสร้างโปรเจ็ค
+### Project Structure
 ```
 AI-Chatbot-GraphRAG/
 ├── src/
-│   ├── api/                # API routes และ handlers
+│   ├── api/                # API routes and handlers
 │   ├── ai/                 # AI response generation
-│   ├── config/             # การกำหนดค่าระบบ
-│   ├── graphrag/           # การใช้งาน GraphRAG
+│   ├── config/             # System configuration
+│   ├── graphrag/           # GraphRAG implementation
 │   │   ├── knowledge_graph.py
 │   │   └── graph_retriever.py
-│   ├── models/             # Data models และ schemas
-│   ├── processing/         # การประมวลผลข้อความ
-│   ├── search/             # เครื่องมือค้นหาต่างๆ
-│   └── utils/              # ฟังก์ชันยูทิลิตี้
+│   ├── models/             # Data models and schemas
+│   ├── processing/         # Text processing utilities
+│   ├── search/             # Search engines
+│   └── utils/              # Utility functions
 ├── src/components/         # React components
 ├── data/
 │   ├── embeddings/         # Vector embeddings
-│   └── graphs/            # ข้อมูลกราฟความรู้
-├── json_cases/            # ข้อมูลคดีกฎหมาย
+│   └── graphs/            # Knowledge graph data
+├── json_cases/            # Legal case data
 ├── main.py                # FastAPI backend
 ├── package.json           # Node.js dependencies
 ├── requirements.txt       # Python dependencies
-└── vite.config.js        # การกำหนดค่า Vite
+└── vite.config.js        # Vite configuration
 ```
 
-### การเพิ่มคุณสมบัติใหม่
-1. **ประเภทการค้นหาใหม่**: ขยาย enum `SearchType` และใช้งานฟังก์ชันค้นหา
-2. **ความสัมพันธ์กราฟ**: เพิ่มประเภทขอบใหม่ใน `LegalKnowledgeGraph`
-3. **องค์ประกอบ UI**: สร้างองค์ประกอบ React ใน `src/components/`
-4. **จุดปลาย API**: เพิ่ม FastAPI routes ใหม่ใน API modules
+### Adding New Features
+1. **New Search Types**: Extend `SearchType` enum and implement search functions
+2. **Graph Relationships**: Add new edge types in `LegalKnowledgeGraph`
+3. **UI Components**: Create React components in `src/components/`
+4. **API Endpoints**: Add new FastAPI routes in API modules
 
-## 📈 ประสิทธิภาพและการปรับขนาด
+## 📈 Performance and Scalability
 
-### คุณสมบัติการเพิ่มประสิทธิภาพ
-- **การจัดทำดัชนี FAISS**: การค้นหาความคล้ายคลึงที่รวดเร็วสำหรับชุดข้อมูลขนาดใหญ่
-- **การประมวลผลแบบกลุ่ม**: การสร้าง embedding ที่มีประสิทธิภาพ
-- **การแคชกราฟ**: การจัดเก็บกราฟความรู้แบบถาวร
-- **การตรวจจับชุมชน**: ลดพื้นที่การค้นหาผ่านการจัดกลุ่ม
+### Optimization Features
+- **FAISS Indexing**: Fast similarity search for large datasets
+- **Batch Processing**: Efficient embedding generation
+- **Graph Caching**: Persistent knowledge graph storage
+- **Community Detection**: Reduces search space through clustering
 
-### ข้อพิจารณาการปรับขนาด
-- **FAISS แบบกระจาย**: สำหรับการรวบรวมคดีขนาดใหญ่
-- **ฐานข้อมูลกราฟ**: การรวม Neo4j สำหรับกราฟที่ซับซ้อน
-- **เลเยอร์แคช**: Redis สำหรับการสอบถามที่พบบ่อย
-- **การปรับสมดุลภาระ**: อินสแตนซ์ backend หลายตัว
+### Scaling Considerations
+- **Distributed FAISS**: For large case collections
+- **Graph Databases**: Neo4j integration for complex graphs
+- **Caching Layer**: Redis for frequent queries
+- **Load Balancing**: Multiple backend instances
 
-## 🔒 ความปลอดภัยและความเป็นส่วนตัว
+## 🔒 Security and Privacy
 
-### การป้องกันข้อมูล
-- การจัดการ API key ตามสภาพแวดล้อม
-- ไม่มีความลับ hardcode ในโค้ด
-- การสื่อสาร API ที่ปลอดภัย
-- การตรวจสอบและทำความสะอาดข้อมูลนำเข้า
+### Data Protection
+- Environment-based API key management
+- No hardcoded secrets in code
+- Secure API communication
+- Input validation and sanitization
 
-### การปฏิบัติตามกฎหมาย
-- เน้นเอกสารกฎหมายสาธารณะ
-- ไม่จัดเก็บข้อมูลส่วนบุคคล
-- ร่องรอยการตรวจสอบสำหรับการวิจัยทางกฎหมาย
-- แนวปฏิบัติ AI ที่มีจริยธรรม
+### Legal Compliance
+- Focus on public legal documents
+- No personal data storage
+- Audit trails for legal research
+- Ethical AI practices
 
-## 🤝 การมีส่วนร่วม
+## 🤝 Contributing
 
-1. Fork repository
-2. สร้าง feature branch: `git checkout -b feature/new-feature`
-3. Commit การเปลี่ยนแปลง: `git commit -am 'Add new feature'`
-4. Push ไปยัง branch: `git push origin feature/new-feature`
-5. ส่ง Pull Request
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/new-feature`
+3. Commit your changes: `git commit -am 'Add new feature'`
+4. Push to the branch: `git push origin feature/new-feature`
+5. Submit a Pull Request
 
-## 📜 ใบอนุญาต
+## 📜 License
 
-โปรเจ็คนี้ได้รับอนุญาตภายใต้ MIT License - ดูไฟล์ [LICENSE](LICENSE) สำหรับรายละเอียด
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 กิตติกรรมประกาศ
+## 🙏 Acknowledgments
 
-- **Sentence Transformers** สำหรับ embeddings หลายภาษา
-- **FAISS** สำหรับการค้นหาความคล้ายคลึงที่มีประสิทธิภาพ
-- **NetworkX** สำหรับการประมวลผลกราฟ
-- **Google Gemini** สำหรับการวิเคราะห์ที่ขับเคลื่อนด้วย AI
-- **React & Material-UI** สำหรับ frontend ที่ทันสมัย
-- **FastAPI** สำหรับ backend ที่มีประสิทธิภาพสูง
-
-
+- **Sentence Transformers** for multilingual embeddings
+- **FAISS** for efficient similarity search
+- **NetworkX** for graph processing
+- **Google Gemini** for AI-powered analysis
+- **React & Material-UI** for modern frontend
+- **FastAPI** for high-performance backend
 
 ---
 
-**แชทบอทกฎหมายไทย GraphRAG** - พัฒนาการวิจัยทางกฎหมายด้วย AI และกราฟความรู้ 🏛️⚡
+**Thai Legal GraphRAG Chatbot** - Advancing legal research with AI and knowledge graphs 🏛️⚡
