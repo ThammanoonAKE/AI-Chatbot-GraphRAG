@@ -59,7 +59,7 @@
 
 ### 1. ดาวน์โหลดโปรเจ็ค
 ```bash
-git clone <repository-url>
+git clone https://github.com/ThammanoonAKE/AI-Chatbot-GraphRAG.git
 cd AI-Chatbot-GraphRAG
 ```
 
